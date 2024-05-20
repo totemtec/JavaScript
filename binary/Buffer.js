@@ -5,6 +5,15 @@ console.log(buffer.readFloatLE())
 const bufferInt8 = Buffer.from("FF", "hex")
 console.log(bufferInt8.readInt8())
 
+const buffer2 = Buffer.from("00000028", "hex")
+console.log(buffer2.readInt32BE())
+
+const buffer3 = Buffer.from("7e000090", "hex")
+console.log(buffer3.readInt32BE())
+
+const tmp = 0x7e0000a0;
+console.log(tmp.toString(2))
+
 // buf.readBigInt64BE()
 // buf.readBigInt64LE()
 // buf.readBigUInt64BE()
